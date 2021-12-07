@@ -1,8 +1,8 @@
 key = "api_key=HvZzMCkpcc1Q661bJpbW9UDhg3KehDS9xe8XNcwY"
 const pictureOfTheDayUrl = "https://api.nasa.gov/planetary/apod?"
 const marsRoversPhotosUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&"
-const audioQuery = "https://images-api.nasa.gov/search?q=apollo%2011&description=moon%20landing&media_type=audio"
-const imageQuery = "https://images-api.nasa.gov/search?q=apollo%2011&description=moon%20landing&media_type=image"
+const audioQuery = "https://images-api.nasa.gov/search?q=planets&media_type=audio"
+const imageQuery = "https://images-api.nasa.gov/search?q=jovian%20planets&media_type=image"
 const audioType = "media_type=audio"
 const imageType = "media_type=image"
 
@@ -83,7 +83,7 @@ async function getMarsRoversPhotos() {
     const marsRefs = object.photos
     
     if (marsPhotos.length === 0) {
-        marsPhotos = marsRefs.length > 10 ? marsRefs.slice(0, 9) : marsRefs
+        marsPhotos = marsRefs.length > 20 ? marsRefs.slice(0, 19) : marsRefs
         marsPhotos.forEach(photo => {
             createRoversPhotoElement(photo)
         });
@@ -120,7 +120,7 @@ async function getAudioByInput() {
     const audioRefs = object.collection.items
 
     if (audiosList.length === 0) {
-        audiosList = audioRefs.length > 10 ? audioRefs.slice(0, 9) : audioRefs
+        audiosList = audioRefs.length > 30 ? audioRefs.slice(0, 29) : audioRefs
         audiosList.forEach(audio => {
             createAudioElement(audio)
         });
@@ -158,7 +158,7 @@ async function getImageByInput() {
     const imageRefs = object.collection.items
     
     if (imagesList.length === 0) {
-        imagesList = imageRefs.length > 10 ? imageRefs.slice(0, 9) : imageRefs
+        imagesList = imageRefs.length > 50 ? imageRefs.slice(0, 49) : imageRefs
         imagesList.forEach(image => {
             createImageElement(image)
         });

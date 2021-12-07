@@ -71,15 +71,15 @@ body {
 }
 
 #apod-image {
-    max-width: 100%;
+    max-width: 70%;
 }
 
 #rovers-sidebar img {
-    max-width: 100%;
+    max-width: 60%;
 }
 
 #image-sidebar img {
-    max-width: 100%;
+    max-width: 60%;
 }
 
 #rovers-title {
@@ -89,4 +89,9 @@ body {
 
 audio {
     display: block;
+}
+
+#rovers-description {
+    margin-left: 3%;
+    margin-right: 3%;
 }
