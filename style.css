@@ -23,11 +23,11 @@ body {
 #sidebar, #rovers-sidebar, #weather-sidebar, #audio-sidebar, #image-sidebar,
 #general-sidebar {
     position: absolute;
-    border-radius: 2% 0% 0% 2%;
-    width: 60vw;
+    border-radius: 2% 0% 0% 0%;
+    width: 50vw;
     height: 100vh;
     right: 0;
-    background-color: #F4FAFF;
+    background-color: #DEE7E7;
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
 }
@@ -45,6 +45,7 @@ body {
 .slide-in {
     animation: slide-in 0.5s forwards;
     -webkit-animation: slide-in 0.5s forwards;
+    box-shadow: 0px 15px 0px 15px #40798C;
 }
 
 .slide-out {
@@ -71,15 +72,15 @@ body {
 }
 
 #apod-image {
-    max-width: 70%;
+    max-width: 100%;
 }
 
 #rovers-sidebar img {
-    max-width: 60%;
+    max-width: 70%;
 }
 
 #image-sidebar img {
-    max-width: 60%;
+    max-width: 70%;
 }
 
 #rovers-title {
