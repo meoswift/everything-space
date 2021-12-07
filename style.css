@@ -89,7 +89,7 @@ body {
 }
 
 audio {
-    display: block;
+    width: 100%;
 }
 
 #rovers-description {
